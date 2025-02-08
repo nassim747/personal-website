@@ -30,7 +30,9 @@ export default function ContactForm() {
         className="space-y-4"
         data-netlify="true"
         name="contact"
+        method="POST"
       >
+        <input type="hidden" name="form-name" value="contact" />
         <div>
           <label htmlFor="name" className="block text-sm font-medium mb-2">
             Name
