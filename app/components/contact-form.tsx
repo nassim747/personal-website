@@ -25,7 +25,12 @@ export default function ContactForm() {
 
   return (
     <Card className="p-6">
-      <form action={handleSubmit} className="space-y-4">
+      <form 
+        action={handleSubmit} 
+        className="space-y-4"
+        data-netlify="true"
+        name="contact"
+      >
         <div>
           <label htmlFor="name" className="block text-sm font-medium mb-2">
             Name
