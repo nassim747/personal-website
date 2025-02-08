@@ -75,15 +75,15 @@ export default function Page() {
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               <ProjectCard
                 title="An AI-Powered Dynamic hospital triage system"
-                description="A dynamic hospital triage system that uses AI and facial rcognition to triage patients based on their symptoms and medical history."
-                image="/placeholder.svg?height=400&width=600"
+                description="A dynamic hospital triage system that uses AI and facial recognition to triage patients based on their symptoms and medical history."
+                image="/Capture.PNG"
                 link="https://github.com/nassim747/McHacks12_AI_Triage_System"
                 tags={["Python", "Deepface", "OpenCV", "Flask"]}
               />
               <ProjectCard
                 title="Equation classifier"
                 description="A deep learning model that classifies grayscale images of simple math equations"
-                image="/placeholder.svg?height=400&width=600"
+                image="/MITRE.png"
                 link="https://github.com/nassim747/EquationClassifier"
                 tags={["Python", "PyTorch"]}
               />
