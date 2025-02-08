@@ -51,7 +51,7 @@ export default function Page() {
                     <span className="sr-only">GitHub</span>
                   </Button>
                 </Link>
-                <Link href="https://linkedin.com/in/nassim-a" target="_blank">
+                <Link href="https://www.linkedin.com/in/nassim-a-265944286/" target="_blank">
                   <Button variant="outline" size="icon">
                     <Linkedin className="h-4 w-4" />
                     <span className="sr-only">LinkedIn</span>
@@ -111,20 +111,6 @@ export default function Page() {
           </div>
         </section>
       </main>
-
-      <footer className="border-t">
-        <div className="container flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6">
-          <p className="text-xs text-gray-500 dark:text-gray-400">© 2025 Nassim</p>
-          <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-            <Link className="text-xs hover:underline underline-offset-4" href="#">
-              Terms of Service
-            </Link>
-            <Link className="text-xs hover:underline underline-offset-4" href="#">
-              Privacy
-            </Link>
-          </nav>
-        </div>
-      </footer>
     </div>
   )
 }
