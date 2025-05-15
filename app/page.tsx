@@ -93,7 +93,7 @@ export default function Page() {
                 image="/MITRE.png"
                 link="https://github.com/nassim747/Black-Scholes-Option-Pricing-Model"
                 deployLink="https://ameur-blackscholes.streamlit.app/"
-                tags={["Python", "Flask", "HTML/CSS", "JavaScript"]}
+                tags={["Python", "Streamlit", "NumPy", "SciPy"]}
               />
             </div>
           </div>
