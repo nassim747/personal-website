@@ -87,6 +87,13 @@ export default function Page() {
                 link="https://github.com/nassim747/EquationClassifier"
                 tags={["Python", "PyTorch"]}
               />
+              <ProjectCard
+                title="Black-Scholes Option Pricing Simulator — Interactive Web App with Monte Carlo Methods"
+                description="A web-based simulator for pricing options using the Black-Scholes formula and Monte Carlo methods. Built with Streamlit, it features heatmaps, variance reduction techniques, and interactive visualizations for exploring financial models."
+                image="/DIDIER.png"
+                link="https://github.com/nassim747/Black_Scholes"
+                tags={["Python", "Streamlit", "NumPy", "SciPy"]}
+              />
             </div>
           </div>
         </section>
