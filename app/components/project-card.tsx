@@ -7,6 +7,7 @@ interface ProjectCardProps {
   description: string
   image: string
   link: string
+  deployLink?: string
   tags: string[]
 }
 
@@ -15,6 +16,7 @@ export default function ProjectCard({
   description,
   image,
   link,
+  deployLink,
   tags,
 }: ProjectCardProps) {
   return (
@@ -41,13 +43,24 @@ export default function ProjectCard({
             </span>
           ))}
         </div>
-        <Link
-          href={link}
-          target="_blank"
-          className="text-primary hover:underline"
-        >
-          View Project →
-        </Link>
+        <div className="flex gap-4">
+          <Link
+            href={link}
+            target="_blank"
+            className="text-primary hover:underline"
+          >
+            GitHub →
+          </Link>
+          {deployLink && (
+            <Link
+              href={deployLink}
+              target="_blank"
+              className="text-primary hover:underline"
+            >
+              Live Demo →
+            </Link>
+          )}
+        </div>
       </div>
     </Card>
   )

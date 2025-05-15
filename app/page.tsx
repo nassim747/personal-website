@@ -88,11 +88,12 @@ export default function Page() {
                 tags={["Python", "PyTorch"]}
               />
               <ProjectCard
-                title="Black-Scholes Option Pricing Simulator — Interactive Web App with Monte Carlo Methods"
-                description="A web-based simulator for pricing options using the Black-Scholes formula and Monte Carlo methods. Built with Streamlit, it features heatmaps, variance reduction techniques, and interactive visualizations for exploring financial models."
-                image="/DIDIER.png"
-                link="https://github.com/nassim747/Black_Scholes"
-                tags={["Python", "Streamlit", "NumPy", "SciPy"]}
+                title="Black-Scholes Option Pricing Model"
+                description="A web application that implements the Black-Scholes model for option pricing, featuring real-time calculations and interactive visualizations."
+                image="/MITRE.png"
+                link="https://github.com/nassim747/Black-Scholes-Option-Pricing-Model"
+                deployLink="https://ameur-blackscholes.streamlit.app/"
+                tags={["Python", "Flask", "HTML/CSS", "JavaScript"]}
               />
             </div>
           </div>
