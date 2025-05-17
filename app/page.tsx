@@ -90,7 +90,7 @@ export default function Page() {
               <ProjectCard
                 title="Black-Scholes Option Pricing Model"
                 description="A web application that implements the Black-Scholes model for option pricing, featuring real-time calculations and interactive visualizations."
-                image="/MITRE.png"
+                image="/DIDIER.png"
                 link="https://github.com/nassim747/Black-Scholes-Option-Pricing-Model"
                 deployLink="https://ameur-blackscholes.streamlit.app/"
                 tags={["Python", "Streamlit", "NumPy", "SciPy"]}
