@@ -74,14 +74,6 @@ export default function Page() {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">Projects</h2>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               <ProjectCard
-                title="An AI-Powered Dynamic hospital triage system"
-                description="A dynamic hospital triage system that uses AI and facial recognition to triage patients based on their symptoms and medical history."
-                image="/Capture.PNG"
-                link="https://github.com/nassim747/McHacks12_AI_Triage_System"
-                tags={["Python", "Deepface", "OpenCV", "Flask"]}
-
-              />
-              <ProjectCard
                 title="QuantLab – ML-Driven Trading Simulator"
                 description="Developed a full-stack web platform to train machine learning models on historical stock data and simulate trading strategies based on predicted returns. Integrated model selection (Linear Regression, Random Forest, XGBoost), hyperparameter tuning, and a custom backtest engine with Sharpe ratio and drawdown metrics."
                 image="/MAO.png"
@@ -90,19 +82,26 @@ export default function Page() {
                 tags={["Python", "Streamlit", "Scikit-learn", "Pandas", "Plotly"]}
               />
               <ProjectCard
-                title="Equation classifier"
-                description="A deep learning model that classifies grayscale images of simple math equations"
-                image="/MITRE.png"
-                link="https://github.com/nassim747/EquationClassifier"
-                tags={["Python", "PyTorch"]}
-              />
-              <ProjectCard
                 title="Black-Scholes Option Pricing Model"
                 description="A web application that implements the Black-Scholes model for option pricing, featuring real-time calculations and interactive visualizations."
                 image="/DIDIER.png"
                 link="https://github.com/nassim747/Black-Scholes-Option-Pricing-Model"
                 deployLink="https://ameur-blackscholes.streamlit.app/"
                 tags={["Python", "Streamlit", "NumPy", "SciPy"]}
+              />
+              <ProjectCard
+                title="An AI-Powered Dynamic hospital triage system"
+                description="A dynamic hospital triage system that uses AI and facial recognition to triage patients based on their symptoms and medical history."
+                image="/Capture.PNG"
+                link="https://github.com/nassim747/McHacks12_AI_Triage_System"
+                tags={["Python", "Deepface", "OpenCV", "Flask"]}
+              />
+               <ProjectCard
+                title="Equation classifier"
+                description="A deep learning model that classifies grayscale images of simple math equations"
+                image="/MITRE.png"
+                link="https://github.com/nassim747/EquationClassifier"
+                tags={["Python", "PyTorch"]}
               />
             </div>
           </div>
