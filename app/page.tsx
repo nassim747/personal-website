@@ -79,6 +79,15 @@ export default function Page() {
                 image="/Capture.PNG"
                 link="https://github.com/nassim747/McHacks12_AI_Triage_System"
                 tags={["Python", "Deepface", "OpenCV", "Flask"]}
+
+              />
+              <ProjectCard
+                title="QuantLab – ML-Driven Trading Simulator"
+                description="Developed a full-stack web platform to train machine learning models on historical stock data and simulate trading strategies based on predicted returns. Integrated model selection (Linear Regression, Random Forest, XGBoost), hyperparameter tuning, and a custom backtest engine with Sharpe ratio and drawdown metrics."
+                image="/MAO.png"
+                link="https://github.com/nassim747/QuantLab"
+                deployLink="https://ameur-quantlab.streamlit.app/"
+                tags={["Python", "Streamlit", "Scikit-learn", "Pandas", "Plotly"]}
               />
               <ProjectCard
                 title="Equation classifier"
