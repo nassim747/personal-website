@@ -73,6 +73,14 @@ export default function Page() {
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">Projects</h2>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <ProjectCard
+                title="Silicon Atlas"
+                description="I got really passionate about semiconductors those last months. So I decided to build a platform that makes this industry more accessible to newcomers like me. I'm still working on it."
+                image="/REPUBLIQUE.png"
+                link="https://github.com/nassim747/SiliconAtlas"
+                deployLink="https://silicon-atlas.vercel.app/"
+                tags={["Next.js", "TypeScript", "Tailwind CSS", "React.js", "Vercel"]}
+              />
               <ProjectCard
                 title="QuantLab – ML-Driven Trading Simulator"
                 description="Developed a full-stack web platform to train machine learning models on historical stock data and simulate trading strategies based on predicted returns. Integrated model selection (Linear Regression, Random Forest, XGBoost), hyperparameter tuning, and a custom backtest engine with Sharpe ratio and drawdown metrics."
