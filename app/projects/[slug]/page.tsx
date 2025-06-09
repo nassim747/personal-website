@@ -34,6 +34,9 @@ export default function ProjectPage({ params }: ProjectPageProps) {
               <Link href="/projects" className="transition-colors hover:text-foreground/80">
                 Projects
               </Link>
+              <Link href="/blog" className="transition-colors hover:text-foreground/80">
+                Blog
+              </Link>
               <Link href="/#contact" className="transition-colors hover:text-foreground/80">
                 Contact
               </Link>
