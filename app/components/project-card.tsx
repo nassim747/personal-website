@@ -9,6 +9,7 @@ interface ProjectCardProps {
   link: string
   deployLink?: string
   tags: string[]
+  projectSlug?: string
 }
 
 export default function ProjectCard({
@@ -18,6 +19,7 @@ export default function ProjectCard({
   link,
   deployLink,
   tags,
+  projectSlug,
 }: ProjectCardProps) {
   return (
     <Card className="overflow-hidden">
@@ -43,7 +45,15 @@ export default function ProjectCard({
             </span>
           ))}
         </div>
-        <div className="flex gap-4">
+        <div className="flex flex-wrap gap-4">
+          {projectSlug && (
+            <Link
+              href={`/projects/${projectSlug}`}
+              className="text-primary hover:underline font-medium"
+            >
+              Read More →
+            </Link>
+          )}
           <Link
             href={link}
             target="_blank"

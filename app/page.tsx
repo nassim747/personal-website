@@ -4,8 +4,11 @@ import Link from "next/link"
 import ContactForm from "./components/contact-form"
 import ProjectCard from "./components/project-card"
 import TechStack from "./components/tech-stack"
+import { getFeaturedProjects } from "@/lib/projects"
 
 export default function Page() {
+  const featuredProjects = getFeaturedProjects()
+
   return (
     <div className="min-h-screen bg-background">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -18,7 +21,7 @@ export default function Page() {
               <Link href="#about" className="transition-colors hover:text-foreground/80">
                 About
               </Link>
-              <Link href="#projects" className="transition-colors hover:text-foreground/80">
+              <Link href="/projects" className="transition-colors hover:text-foreground/80">
                 Projects
               </Link>
               <Link href="#contact" className="transition-colors hover:text-foreground/80">
@@ -69,48 +72,29 @@ export default function Page() {
           </div>
         </section>
 
-        <section id="projects" className="py-12 md:py-24 lg:py-32">
+        <section className="py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">Projects</h2>
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <ProjectCard
-                title="Silicon Atlas"
-                description="I got really passionate about semiconductors those last months. So I decided to build a platform that makes this industry more accessible to newcomers like me. I'm still working on it."
-                image="/REPUBLIQUE.png"
-                link="https://github.com/nassim747/SiliconAtlas"
-                deployLink="https://silicon-atlas.vercel.app/"
-                tags={["Next.js", "TypeScript", "Tailwind CSS", "React.js", "Vercel"]}
-              />
-              <ProjectCard
-                title="QuantLab – ML-Driven Trading Simulator"
-                description="Developed a full-stack web platform to train machine learning models on historical stock data and simulate trading strategies based on predicted returns. Integrated model selection (Linear Regression, Random Forest, XGBoost), hyperparameter tuning, and a custom backtest engine with Sharpe ratio and drawdown metrics."
-                image="/MAO.png"
-                link="https://github.com/nassim747/QuantLab"
-                deployLink="https://ameur-quantlab.streamlit.app/"
-                tags={["Python", "Streamlit", "Scikit-learn", "Pandas", "Plotly"]}
-              />
-              <ProjectCard
-                title="Black-Scholes Option Pricing Model"
-                description="A web application that implements the Black-Scholes model for option pricing, featuring real-time calculations and interactive visualizations."
-                image="/DIDIER.png"
-                link="https://github.com/nassim747/Black-Scholes-Option-Pricing-Model"
-                deployLink="https://ameur-blackscholes.streamlit.app/"
-                tags={["Python", "Streamlit", "NumPy", "SciPy"]}
-              />
-              <ProjectCard
-                title="An AI-Powered Dynamic hospital triage system"
-                description="A dynamic hospital triage system that uses AI and facial recognition to triage patients based on their symptoms and medical history."
-                image="/Capture.PNG"
-                link="https://github.com/nassim747/McHacks12_AI_Triage_System"
-                tags={["Python", "Deepface", "OpenCV", "Flask"]}
-              />
-               <ProjectCard
-                title="Equation classifier"
-                description="A deep learning model that classifies grayscale images of simple math equations"
-                image="/MITRE.png"
-                link="https://github.com/nassim747/EquationClassifier"
-                tags={["Python", "PyTorch"]}
-              />
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">Featured Projects</h2>
+            <div className="grid gap-6 md:grid-cols-2">
+              {featuredProjects.map((project) => (
+                <ProjectCard
+                  key={project.slug}
+                  title={project.title}
+                  description={project.description}
+                  image={project.image}
+                  link={project.githubUrl}
+                  deployLink={project.liveUrl}
+                  tags={project.tags}
+                  projectSlug={project.slug}
+                />
+              ))}
+            </div>
+            <div className="flex justify-center mt-12">
+              <Link href="/projects">
+                <Button size="lg">
+                  View All Projects
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
