@@ -27,9 +27,6 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
               <span className="hidden font-bold sm:inline-block">Nassim</span>
             </Link>
             <nav className="flex items-center space-x-6 text-sm font-medium">
-              <Link href="/#about" className="transition-colors hover:text-foreground/80">
-                About
-              </Link>
               <Link href="/projects" className="transition-colors hover:text-foreground/80">
                 Projects
               </Link>
