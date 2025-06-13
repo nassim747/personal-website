@@ -12,14 +12,4 @@ slug: "black-scholes"
 
 # Black-Scholes Option Pricing Model
 
-*Detailed content will be added here...*
-
-## The Problem I Wanted to Solve
-
-## Technical Approach
-
-## Key Features
-
-## Challenges & Solutions
-
-## What I Learned 
+Really just a demo of a Black-Scholes implementation, with some cool features. Wanted to learn more on finance while doing something related to maths. Also got to learn how to build things using Streamlit.
