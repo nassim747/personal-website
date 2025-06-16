@@ -12,14 +12,8 @@ slug: "silicon-atlas"
 
 # Silicon Atlas - Deep Dive
 
-*Detailed content will be added here...*
+This was a project I wanted to build for a while: I really wanted to make the semiconductor industry more accessible and vulgarized for people who do not necessarily have a deep technical background.
 
-## The Problem I Wanted to Solve
+I've built interactive timeline and map while learning how to play with Next.js for server-side rendering and routing, TypeScript for robust, maintainable code, Tailwind CSS for utility-first, responsive styling and React for UI compnents.
 
-## Technical Approach
-
-## Key Features
-
-## Challenges & Solutions
-
-## What I Learned 
+Really liked it overall

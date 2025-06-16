@@ -12,14 +12,4 @@ slug: "equation-classifier"
 
 # Equation Classifier
 
-*Detailed content will be added here...*
-
-## The Problem I Wanted to Solve
-
-## Technical Approach
-
-## Key Features
-
-## Challenges & Solutions
-
-## What I Learned 
+This was kind of a more theoretical project that I've done to learn how to implement a Convulational Neural Network while teaching myself ML.
