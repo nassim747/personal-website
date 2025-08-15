@@ -44,7 +44,7 @@ export default function Page() {
                   Nassim
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                  Math & CS @ McGill. I like to build stuff
+                Math & CS @ McGill | Physics & Econ Minor | Building AI Infra at the Intersection of Bits & Atoms
                 </p>
               </div>
               <div className="space-x-4">
