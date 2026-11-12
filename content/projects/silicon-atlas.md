@@ -5,7 +5,7 @@ image: "/REPUBLIQUE.png"
 githubUrl: "https://github.com/nassim747/SiliconAtlas"
 liveUrl: "https://silicon-atlas.vercel.app/"
 tags: ["Next.js", "TypeScript", "Tailwind CSS", "React.js", "Vercel"]
-featured: true
+featured: false
 order: 1
 slug: "silicon-atlas"
 ---

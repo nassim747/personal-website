@@ -3,7 +3,6 @@ import { Github, Linkedin, Mail, Twitter } from "lucide-react"
 import Link from "next/link"
 import ContactForm from "./components/contact-form"
 import ProjectCard from "./components/project-card"
-import TechStack from "./components/tech-stack"
 import { getFeaturedProjects } from "@/lib/projects"
 
 export default function Page() {
@@ -44,7 +43,7 @@ export default function Page() {
                   Nassim
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                Math & CS @ McGill | Physics & Econ Minor | Building AI Infra at the Intersection of Bits & Atoms
+                Engineering systems at the intersection of LLMs, machine learning, and operations research
                 </p>
               </div>
               <div className="space-x-4">
@@ -54,7 +53,7 @@ export default function Page() {
                     <span className="sr-only">GitHub</span>
                   </Button>
                 </Link>
-                <Link href="https://www.linkedin.com/in/nassim-a-265944286/" target="_blank">
+                <Link href="https://www.linkedin.com/in/ameurnassim/" target="_blank">
                   <Button variant="outline" size="icon">
                     <Linkedin className="h-4 w-4" />
                     <span className="sr-only">LinkedIn</span>
@@ -96,15 +95,6 @@ export default function Page() {
                 </Button>
               </Link>
             </div>
-          </div>
-        </section>
-
-        <section className="py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">
-              Tech Stack
-            </h2>
-            <TechStack />
           </div>
         </section>
 
